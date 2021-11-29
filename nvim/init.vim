@@ -49,5 +49,6 @@ call plug#begin(data_dir . '/plugins')
 source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/context-commentstring.vim
 source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/fzf.vim
 
 call plug#end()
