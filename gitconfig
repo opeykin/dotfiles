@@ -21,3 +21,6 @@
     st = s
 [pull]
 	rebase = true
+[merge]
+    conflictstyle = diff3
+    tool = vimdiff2
