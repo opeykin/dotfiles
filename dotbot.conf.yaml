@@ -2,6 +2,7 @@
 - link: {
     ~/.gitconfig: gitconfig,
     ~/.tmux.conf: tmux.conf,
+    ~/.inputrc: inputrc,
     ~/.config/nvim: nvim
 }
 - shell: []
