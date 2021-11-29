@@ -19,3 +19,5 @@
 
     s = status --short --branch
     st = status --short --branch
+[pull]
+	rebase = true
