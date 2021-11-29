@@ -1,8 +1,12 @@
-- clean: []
-- link: {
-    ~/.gitconfig: gitconfig,
-    ~/.tmux.conf: tmux.conf,
-    ~/.inputrc: inputrc,
+- clean: [
+    '~'
+]
+
+- link: 
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
+    ~/.inputrc: inputrc
     ~/.config/nvim: nvim
-}
-- shell: []
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
