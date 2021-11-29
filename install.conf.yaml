@@ -1,5 +1,6 @@
 - clean: []
 - link: {
-    ~/.gitconfig: gitconfig
+    ~/.gitconfig: gitconfig,
+    ~/.config/nvim: nvim
 }
 - shell: []
