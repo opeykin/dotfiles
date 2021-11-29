@@ -1,6 +1,7 @@
 - clean: []
 - link: {
     ~/.gitconfig: gitconfig,
+    ~/.tmux.conf: tmux.conf,
     ~/.config/nvim: nvim
 }
 - shell: []
