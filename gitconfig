@@ -1,2 +1,21 @@
 [include]
     path = ~/.gitconfig_local
+[alias]
+    a = add
+    aa = add --all
+
+    b = branch
+
+    c = commit
+    ca = commit --amend
+    ci = commit --interactive
+    cm = commit --message
+
+    l = log
+    lg = log --graph --oneline
+
+    o = checkout
+    ob = checkout -b
+
+    s = status --short --branch
+    st = status --short --branch
