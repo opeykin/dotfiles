@@ -12,7 +12,6 @@ set title
 set ignorecase
 set smartcase
 set nowrap
-set mouse=a
 set scrolloff=4
 set sidescrolloff=4
 
