@@ -15,3 +15,7 @@ compinit
 zstyle ':completion:*' group-name ''
 
 alias vim='nvim'
+
+if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
+    . /usr/share/doc/fzf/examples/key-bindings.zsh
+fi
