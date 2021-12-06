@@ -14,6 +14,7 @@ set smartcase
 set nowrap
 set scrolloff=4
 set sidescrolloff=4
+set hidden
 
 "--------------------------------------------------------------------------
 " Key maps
@@ -45,5 +46,6 @@ source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/context-commentstring.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
+source ~/.config/nvim/plugins/tomasr-molokai.vim
 
 call plug#end()
