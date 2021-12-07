@@ -49,3 +49,6 @@ source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/tomasr-molokai.vim
 
 call plug#end()
+
+"TODO: move to a dedicated folder with a callback
+colorscheme molokai
