@@ -7,7 +7,7 @@ set shiftwidth=4
 set tabstop=4
 set number
 set relativenumber
-"set termguicolors
+set termguicolors
 set title
 set ignorecase
 set smartcase
@@ -52,4 +52,4 @@ source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
 call plug#end()
 
 "TODO: move to a dedicated folder with a callback
-"colorscheme molokai
+colorscheme molokai
