@@ -1,6 +1,8 @@
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-nmap <leader>f :Files<cr>
+nmap <leader>ff :Files<cr>
+nmap <leader>fa :Ag<cr>
+nmap <leader>fw :Ag <C-R><C-W><CR>
 nmap <leader>b :Buffers<cr>
-nmap <leader>h :History<cr>
+nmap <leader>fh :History<cr>
