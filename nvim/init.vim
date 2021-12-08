@@ -1,4 +1,4 @@
-"-------------------------------------------------------------------------
+
 " General settings
 "--------------------------------------------------------------------------
 
@@ -47,8 +47,9 @@ source ~/.config/nvim/plugins/context-commentstring.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/tomasr-molokai.vim
+source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
 
 call plug#end()
 
 "TODO: move to a dedicated folder with a callback
-colorscheme molokai
+"colorscheme molokai
