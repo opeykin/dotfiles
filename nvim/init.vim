@@ -28,6 +28,8 @@ nmap <leader>vr :source $MYVIMRC<cr>
 " Allow gf to open non-existent files
 map gf :edit <cfile><cr>
 
+nnoremap <leader>u :checktime<cr>
+
 " Maintain the cursor position when yanking a visual selection
 " http://ddrscott.github.io/blog/2016/yank-without-jank/
 vnoremap y myy`y
