@@ -3,8 +3,8 @@
 "--------------------------------------------------------------------------
 
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set number
 set relativenumber
 set termguicolors
@@ -29,11 +29,6 @@ nmap <leader>vr :source $MYVIMRC<cr>
 map gf :edit <cfile><cr>
 
 nnoremap <leader>u :checktime<cr>
-
-" Maintain the cursor position when yanking a visual selection
-" http://ddrscott.github.io/blog/2016/yank-without-jank/
-vnoremap y myy`y
-vnoremap Y myY`y
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 
