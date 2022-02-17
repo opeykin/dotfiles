@@ -30,7 +30,8 @@ map gf :edit <cfile><cr>
 
 nnoremap <leader>u :checktime<cr>
 
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
+nnoremap <Leader>sa :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
+nnoremap <Leader>si :%s/\<<C-r><C-w>\>//gcI<Left><Left><Left><Left>
 
 "--------------------------------------------------------------------------
 " Plugins
