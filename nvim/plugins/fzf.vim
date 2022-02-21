@@ -11,3 +11,4 @@ nmap <leader>ti :BTags<cr>
 nmap <leader>tt :Tags<cr>
 
 let g:fzf_preview_window = ['down:70%:hidden', 'ctrl-/']
+let g:fzf_tags_command = 'ctags -R --fields=+S'
