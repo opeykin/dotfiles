@@ -51,3 +51,13 @@ call plug#end()
 
 "TODO: move to a dedicated folder with a callback
 colorscheme molokai
+
+"--------------------------------------------------------------------------
+" Functions
+"--------------------------------------------------------------------------
+
+function! DelTags()
+  let resp = system('rm ' . getcwd() . '/tags')
+endfunction
+
+nnoremap <Leader>td :call DelTags()<cr>
