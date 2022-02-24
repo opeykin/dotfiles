@@ -16,7 +16,7 @@ command! -bang -nargs=* BTags2 call fzf#vim#buffer_tags(<q-args>, plugins#fzf#bt
 nmap <leader>ff :Files<cr>
 nmap <leader>fa :Ag<cr>
 nmap <leader>fw :Ag <C-R><C-W><CR>
-nmap <leader>b :Buffers<cr>
+nmap <leader>b :call fzf#vim#files("", {'options': '-q '.shellescape(expand('<cword>'))})<cr>
 nmap <leader>e :Buffers<cr>
 nmap <leader>fh :History<cr>
 nmap <leader>ti :BTags2<cr>
