@@ -54,6 +54,10 @@ call plug#end()
 "TODO: move to a dedicated folder with a callback
 colorscheme molokai
 
+autocmd BufNewFile,BufRead *.cconf set syntax=python
+autocmd BufNewFile,BufRead *.cinc set syntax=python
+autocmd BufNewFile,BufRead *.thrift-cvalidator set syntax=python
+
 "--------------------------------------------------------------------------
 " Functions
 "--------------------------------------------------------------------------
