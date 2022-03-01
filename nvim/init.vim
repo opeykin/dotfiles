@@ -47,6 +47,7 @@ source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/tomasr-molokai.vim
 source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
 source ~/.config/nvim/plugins/CurtineIncSw.vim
+source ~/.config/nvim/plugins/solarnz-thrift.vim
 
 call plug#end()
 
