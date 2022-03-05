@@ -1,3 +1,7 @@
+autoload -Uz promptinit
+promptinit
+prompt adam1
+
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
