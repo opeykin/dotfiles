@@ -30,8 +30,12 @@ map gf :edit <cfile><cr>
 
 nnoremap <leader>u :checktime<cr>
 
+nnoremap <leader>al :silent !arc lint -a %<cr>
+
 nnoremap <Leader>sa :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
 nnoremap <Leader>si :%s/\<<C-r><C-w>\>//gcI<Left><Left><Left><Left>
+
+nnoremap <leader>o :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 "--------------------------------------------------------------------------
 " Plugins
@@ -46,7 +50,6 @@ source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/tomasr-molokai.vim
 source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
-source ~/.config/nvim/plugins/CurtineIncSw.vim
 source ~/.config/nvim/plugins/solarnz-thrift.vim
 
 call plug#end()
