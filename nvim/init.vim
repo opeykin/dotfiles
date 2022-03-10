@@ -15,6 +15,7 @@ set nowrap
 set scrolloff=4
 set sidescrolloff=4
 set hidden
+set cursorline
 
 "--------------------------------------------------------------------------
 " Key maps
