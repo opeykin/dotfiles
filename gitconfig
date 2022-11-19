@@ -13,6 +13,7 @@
 
     l = log
     lg = log --graph --oneline
+    sl = lg
 
     o = checkout
     ob = checkout -b
