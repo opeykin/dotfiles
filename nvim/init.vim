@@ -56,6 +56,8 @@ call plug#end()
 
 "TODO: move to a dedicated folder with a callback
 colorscheme molokai
+hi clear MatchParen
+hi MatchParen ctermbg=6 guibg=DarkCyan
 
 autocmd BufNewFile,BufRead *.cconf ++nested set syntax=python
 autocmd BufNewFile,BufRead *.cinc ++nested set syntax=python
