@@ -25,3 +25,5 @@
 [merge]
     conflictstyle = diff3
     tool = vimdiff2
+[core]
+	editor = nvim

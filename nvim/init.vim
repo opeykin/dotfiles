@@ -1,4 +1,4 @@
-
+"--------------------------------------------------------------------------
 " General settings
 "--------------------------------------------------------------------------
 
@@ -6,7 +6,6 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set number
-set termguicolors
 set title
 set ignorecase
 set smartcase
@@ -49,19 +48,19 @@ source ~/.config/nvim/plugins/context-commentstring.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/tomasr-molokai.vim
+source ~/.config/nvim/plugins/sainnhe-everforest.vim
 source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
 source ~/.config/nvim/plugins/solarnz-thrift.vim
 
 call plug#end()
 
 "TODO: move to a dedicated folder with a callback
-colorscheme molokai
-hi clear MatchParen
-hi MatchParen ctermbg=6 guibg=DarkCyan
+colorscheme everforest
 
 autocmd BufNewFile,BufRead *.cconf ++nested set syntax=python
 autocmd BufNewFile,BufRead *.cinc ++nested set syntax=python
 autocmd BufNewFile,BufRead *.thrift-cvalidator ++nested set syntax=python
+autocmd BufNewFile,BufRead TARGETS ++nested set syntax=python
 
 "--------------------------------------------------------------------------
 " Functions
