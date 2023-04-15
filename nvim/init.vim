@@ -47,7 +47,6 @@ source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/context-commentstring.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
-source ~/.config/nvim/plugins/tomasr-molokai.vim
 source ~/.config/nvim/plugins/sainnhe-everforest.vim
 source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
 source ~/.config/nvim/plugins/solarnz-thrift.vim
