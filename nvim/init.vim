@@ -24,6 +24,7 @@ let mapleader = "\<space>"
 
 nmap <leader>ve :edit $MYVIMRC<cr>
 nmap <leader>vr :source $MYVIMRC<cr>
+nmap <leader>te :edit ~/.tmux.conf<cr>
 
 " Allow gf to open non-existent files
 map gf :edit <cfile><cr>
