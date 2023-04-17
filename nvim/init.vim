@@ -15,6 +15,7 @@ set sidescrolloff=4
 set hidden
 set cursorline
 set termguicolors
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
 "--------------------------------------------------------------------------
 " Key maps
