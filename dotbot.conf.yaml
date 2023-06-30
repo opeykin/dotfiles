@@ -5,6 +5,7 @@
 - link: 
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
+    ~/.bashrc: bashrc
     ~/.zshrc: zshrc
     ~/.inputrc: inputrc
     ~/.config/nvim: nvim
