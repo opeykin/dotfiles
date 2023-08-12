@@ -39,6 +39,8 @@ nnoremap <Leader>si :%s/\<<C-r><C-w>\>//gcI<Left><Left><Left><Left>
 
 nnoremap <leader>o :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
+" toggle highlight
+:nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 "--------------------------------------------------------------------------
 " Plugins
 "--------------------------------------------------------------------------
