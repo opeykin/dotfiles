@@ -2,7 +2,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 let g:fzf_preview_window = ['down:70%:hidden', 'ctrl-/']
-let g:fzf_tags_command = 'ctags -R --fields=+S'
+let g:fzf_tags_command = 'ctags -R --fields=+S --exclude=*.asm'
 
 function! plugins#fzf#btag_cmd()
   let escaped = fzf#shellescape(expand('%'))
