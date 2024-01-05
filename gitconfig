@@ -10,13 +10,13 @@
     ca = commit --amend
     ci = commit --interactive
     cm = commit --message
+    amend = commit -a --amend --no-edit
 
     l = log
     lg = log --graph --oneline
     sl = lg
 
-    o = checkout
-    ob = checkout -b
+    co = checkout
 
     s = status --short
     st = s
