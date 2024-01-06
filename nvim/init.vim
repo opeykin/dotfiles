@@ -42,6 +42,8 @@ nnoremap <leader>o :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 " toggle highlight
 nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
+nnoremap <leader>gb :execute "!git blame -L" . line('.') . "," . line('.') . " %"<CR>
+
 " Alt-j/k to move lines
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
