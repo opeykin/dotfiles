@@ -9,6 +9,7 @@
     ~/.zshrc: zshrc
     ~/.inputrc: inputrc
     ~/.config/nvim: nvim
+    ~/.config/ranger: ranger
 
 # devserver install: env $(fwdproxy-config --format=sh curl) ./install
 - shell:

@@ -139,3 +139,5 @@ man() {
     LESS_TERMCAP_se=$'\e[0m' \
     command man "$@"
 }
+
+alias r=". ranger"
