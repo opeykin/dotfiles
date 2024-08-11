@@ -130,6 +130,10 @@ if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
   . /usr/share/doc/fzf/examples/key-bindings.bash
 fi
 
+if [ -f ~/.bashrc_local ]; then
+  . ~/.bashrc_local
+fi
+
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
     LESS_TERMCAP_me=$'\e[0m' \
