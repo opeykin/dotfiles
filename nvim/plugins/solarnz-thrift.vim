@@ -1,1 +1,0 @@
-Plug 'solarnz/thrift.vim'

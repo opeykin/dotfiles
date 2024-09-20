@@ -61,33 +61,36 @@ vnoremap <leader>y "+y
 nnoremap J mzJ`z
 
 "--------------------------------------------------------------------------
-" Plugins
+" Plugins install
 "--------------------------------------------------------------------------
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 call plug#begin(data_dir . '/plugins')
 
-source ~/.config/nvim/plugins/commentary.vim
-source ~/.config/nvim/plugins/context-commentstring.vim
-source ~/.config/nvim/plugins/nerdtree.vim
-source ~/.config/nvim/plugins/fzf.vim
-source ~/.config/nvim/plugins/sainnhe-everforest.vim
-" source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
-source ~/.config/nvim/plugins/solarnz-thrift.vim
-
+Plug 'tpope/vim-commentary'
+Plug 'jessarcher/vim-context-commentstring'
+Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'sainnhe/everforest'
+Plug 'solarnz/thrift.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
+
+"--------------------------------------------------------------------------
+" Plugins setup
+"--------------------------------------------------------------------------
+
+source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/fzf.vim
+source ~/.config/nvim/plugins/everforest.vim
+
 lua << EOF
-
 require("treesitter-config")
-
 EOF
 
-
-"TODO: move to a dedicated folder with a callback
-colorscheme everforest
 
 autocmd BufNewFile,BufRead *.cconf ++nested set syntax=python
 autocmd BufNewFile,BufRead *.cinc ++nested set syntax=python
