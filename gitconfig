@@ -27,3 +27,5 @@
     tool = vimdiff2
 [core]
 	editor = nvim
+[http "https://git.internal.tfbnw.net/"]
+	sslCert = /var/facebook/credentials/opeykin/x509/opeykin.pem
