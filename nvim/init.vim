@@ -30,7 +30,7 @@ nmap <leader>te :edit ~/.tmux.conf<cr>
 " Allow gf to open non-existent files
 map gf :edit <cfile><cr>
 
-nnoremap <leader>u :checktime<cr>
+nnoremap <leader>r :checktime<cr>
 
 nnoremap <leader>al :silent !arc lint -a %<cr>
 
@@ -75,6 +75,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'sainnhe/everforest'
 Plug 'solarnz/thrift.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'mbbill/undotree'
 
 call plug#end()
 
@@ -89,6 +90,7 @@ source ~/.config/nvim/plugins/everforest.vim
 
 lua << EOF
 require("treesitter-config")
+require("undotree")
 EOF
 
 
