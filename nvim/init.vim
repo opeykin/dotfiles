@@ -72,10 +72,19 @@ source ~/.config/nvim/plugins/context-commentstring.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/sainnhe-everforest.vim
-source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
+" source ~/.config/nvim/plugins/octol-vim-cpp-enhanced-highlight.vim
 source ~/.config/nvim/plugins/solarnz-thrift.vim
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
+
+lua << EOF
+
+require("treesitter-config")
+
+EOF
+
 
 "TODO: move to a dedicated folder with a callback
 colorscheme everforest
