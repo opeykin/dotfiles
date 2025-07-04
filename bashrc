@@ -116,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# local bashrc shared overrides
+[ -f ~/.bashrc_shared ] && source ~/.bashrc_shared
+
+# local bashrc local overrides
+[ -f ~/.bashrc_local ] && source ~/.bashrc_local
+
 
 # -------------- CUSTOM HERE ---------------------
 

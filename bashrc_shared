@@ -1,0 +1,61 @@
+# input colors
+export PS1="\[\033[01;32m\]\u@\[\033[01;31m\]\h:\[\033[33;01;34m\]\w \[\033[33;1m\]>\[\033[01;32m\]>\[\033[33;01;34m\]>\[\033[m\] "
+
+# vi edit mode
+set -o vi
+
+#export LSCOLORS=ExGxBxDxCxegedabagacad
+alias ls='ls --color=auto'
+
+#autojump 
+[[ -s /home/opeykin/.autojump/etc/profile.d/autojump.sh ]] && source /home/opeykin/.autojump/etc/profile.d/autojump.sh
+ 
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
+# find
+LAST_FIND_RESULTS=/tmp/last_find_results
+LAST_FIND_ERRORS=/tmp/last_find_errors
+
+function f()
+{
+find . -name $1 2>$LAST_FIND_ERRORS | tee $LAST_FIND_RESULTS | grep $1 --color=always
+}
+
+function fa()
+{
+find . -name '*'$1'*' 2>$LAST_FIND_ERRORS | tee $LAST_FIND_RESULTS | grep $1 --color=always
+}
+
+alias lfr="cat $LAST_FIND_RESULTS"
+alias lfe="cat $LAST_FIND_ERRORS"
+
+# hg
+alias fpurge='hg status -0un | xargs -0 rm'
+
+# git
+alias gl='git log'
+alias gst='git status'
+alias grc='git rebase --continue'
+alias ga='git amend -a'
+
+# nvim
+export EDITOR=nvim
+alias vim='nvim'
+
+# man
+man() {
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[45;93m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    command man "$@"
+}
+
+# ranger
+alias r=". ranger"
