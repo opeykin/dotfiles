@@ -4,17 +4,20 @@ export PS1="\[\033[01;32m\]\u@\[\033[01;31m\]\h:\[\033[33;01;34m\]\w \[\033[33;1
 # vi edit mode
 set -o vi
 
+HISTFILESIZE=-1
+HISTSIZE=1000000
+HISTCONTROL=erasedups
+shopt -s histappend
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 #export LSCOLORS=ExGxBxDxCxegedabagacad
 alias ls='ls --color=auto'
 
 #autojump 
 [[ -s /home/opeykin/.autojump/etc/profile.d/autojump.sh ]] && source /home/opeykin/.autojump/etc/profile.d/autojump.sh
- 
+
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export HISTCONTROL=erasedups
-export HISTSIZE=10000
-shopt -s histappend
 
 # find
 LAST_FIND_RESULTS=/tmp/last_find_results
