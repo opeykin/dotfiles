@@ -32,6 +32,7 @@ map gf :edit <cfile><cr>
 
 " go to tags
 nnoremap <leader>b <C-]>
+nnoremap gb <C-]>
 
 nnoremap <leader>r :checktime<cr>
 
