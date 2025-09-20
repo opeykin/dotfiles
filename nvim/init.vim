@@ -30,6 +30,9 @@ nmap <leader>te :edit ~/.tmux.conf<cr>
 " Allow gf to open non-existent files
 map gf :edit <cfile><cr>
 
+" go to tags
+nnoremap <leader>b <C-]>
+
 nnoremap <leader>r :checktime<cr>
 
 nnoremap <leader>al :silent !arc lint -a %<cr>
