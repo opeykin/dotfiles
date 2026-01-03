@@ -19,18 +19,35 @@ if [ -f /usr/share/fzf/shell/key-bindings.bash ]; then
   . /usr/share/fzf/shell/key-bindings.bash
 fi
 
-# hg sl
-hg_sl_fzf() {
-    hg sl | fzf --phony --reverse --height=50% | sed -E 's/.*[o@x]\s*([0-9a-f]+)\s.*/\1/'
-}
+_HG_SL_FZF='hg sl --color=always | fzf --ansi --phony --reverse --height=50% | sed -E '"'"'s/.*[o@x]\s*([0-9a-f]+)\s.*/\1/'"'"
 
-# Wrapper function for readline binding
+# Widget to insert hash at cursor
 _hg_sl_fzf_widget() {
-    local result
-    result=$(hg_sl_fzf)
-    READLINE_LINE="${READLINE_LINE:0:$READLINE_POINT}${result}${READLINE_LINE:$READLINE_POINT}"
-    READLINE_POINT=$((READLINE_POINT + ${#result}))
+    local commit_hash
+    commit_hash=$(eval "$_HG_SL_FZF")
+    READLINE_LINE="${READLINE_LINE:0:$READLINE_POINT}${commit_hash}${READLINE_LINE:$READLINE_POINT}"
+    READLINE_POINT=$((READLINE_POINT + ${#commit_hash}))
 }
 
-# Bind Ctrl+g to the widget
+# Function to select and checkout
+hg_checkout_fzf() {
+    local commit_hash
+    commit_hash=$(eval "$_HG_SL_FZF")
+    if [[ -n "$commit_hash" ]]; then
+        hg checkout "$commit_hash"
+    fi
+}
+
+# Widget to checkout selected commit
+_hg_checkout_fzf_widget() {
+    hg_checkout_fzf
+    # Refresh the prompt after checkout
+    READLINE_LINE=""
+    READLINE_POINT=0
+}
+
+# Bind Ctrl+g to insert hash
 bind -x '"\C-g": _hg_sl_fzf_widget'
+
+# Bind Ctrl+o to checkout
+bind -x '"\C-o": _hg_checkout_fzf_widget'
