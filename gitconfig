@@ -33,5 +33,9 @@
 	sslCert = /var/facebook/credentials/opeykin/x509/opeykin.pem
 [http "https://git.internal.tfbnw.net"]
 	sslCert = /var/facebook/credentials/opeykin/x509/opeykin.pem
+	sslKey = /var/facebook/credentials/opeykin/x509/opeykin.pem
 [http "https://manifold.c2p.facebook.net"]
 	sslCert = /var/facebook/credentials/opeykin/x509/opeykin.pem
+[http "https://mononoke-git-lfs.internal.tfbnw.net"]
+	sslCert = /var/facebook/credentials/opeykin/x509/opeykin.pem
+	sslKey = /var/facebook/credentials/opeykin/x509/opeykin.pem
