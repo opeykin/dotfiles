@@ -8,7 +8,7 @@ HISTFILESIZE=-1
 HISTSIZE=1000000
 HISTCONTROL=erasedups
 shopt -s histappend
-PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
 
 #export LSCOLORS=ExGxBxDxCxegedabagacad
 alias ls='ls --color=auto'
