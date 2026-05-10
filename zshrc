@@ -9,9 +9,8 @@ HISTSIZE=10000000
 SAVEHIST=10000000
 HISTFILE=~/.zsh_history
 
-export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
-alias ls='ls -G'
-
+# shared rc overrides
+[ -f ~/.rc_shared ] && source ~/.rc_shared
 
 # ---------------- VI mode stuff --------------------------
 
@@ -45,13 +44,8 @@ zle -N zle-keymap-select
 zle -N zle-line-init
 
 
-
-
-alias vim='nvim'
-
 source <(fzf --zsh)
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
-# Ctrl+U to go up one directory level
-bindkey -s '^U' 'cd ..^M'
+#bindkey -s '^U' 'cd ..^M'

@@ -6,6 +6,7 @@
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
     ~/.bashrc_shared: bashrc_shared
+    ~/.rc_shared: rc_shared
     ~/.zshrc: zshrc
     ~/.inputrc: inputrc
     ~/.config/nvim: nvim
