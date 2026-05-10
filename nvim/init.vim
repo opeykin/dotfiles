@@ -78,7 +78,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sainnhe/everforest'
 Plug 'solarnz/thrift.vim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'mbbill/undotree'
 
 call plug#end()
@@ -92,8 +92,8 @@ source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/everforest.vim
 
+"require("treesitter-config")
 lua << EOF
-require("treesitter-config")
 require("undotree")
 EOF
 
