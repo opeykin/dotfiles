@@ -9,6 +9,9 @@ HISTSIZE=10000000
 SAVEHIST=10000000
 HISTFILE=~/.zsh_history
 
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+alias ls='ls -G'
+
 
 # ---------------- VI mode stuff --------------------------
 
@@ -49,3 +52,6 @@ alias vim='nvim'
 source <(fzf --zsh)
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
+# Ctrl+U to go up one directory level
+bindkey -s '^U' 'cd ..^M'
